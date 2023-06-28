@@ -1,0 +1,5 @@
+#!C:\Windows\system32\cmd.exe
+@echo off
+echo 
+
+ffmpeg.exe -f dshow -video_size {{resolution}} -i video="screen-capture-recorder" -f dshow -i audio="virtual-audio-capturer" -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -pix_fmt yuv420p -acodec aac pipe:.flv
