@@ -6,6 +6,8 @@ This is a simple DLNA screen caster. It can be used to cast your screen to a DLN
 
 ## Usage
 
+**Install ffmpeg and add it to your PATH.**
+
 ```bash
 pip install pyqt5
 python main.py
